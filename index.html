@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+<body>
+    <label>Your course name : <input class="course" type="text"></input></label>
+</body>
+    <script>
+        alert("Hello World");
+        // creates class/document named course
+        alert(document.querySelector('.course'));
+        // creates variable/object named txtCourse and stores it in the course class/document
+        var txtCourse = document.querySelector('.course');
+        // gives the object txtCourse a specific Event of focusout and defines what the event will do
+        txtCourse.addEventListener(
+            'focusout',
+            (event) => { alert(txtCourse.value) }
+        );
+    </script>
+</html>
